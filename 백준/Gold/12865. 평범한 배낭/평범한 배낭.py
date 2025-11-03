@@ -1,0 +1,19 @@
+n, k = map(int, input(). split())
+li = [[0 for _ in range(k+1)] for _ in range(n+1)]
+items = [[0, 0]]
+values = 0
+
+for _ in range(n):
+    items.append(list(map(int, input(). split())))
+
+for i in range(1, n+1):
+    for w in range(1, k+1):
+        wi = items[i][0]
+        vi = items[i][1]
+        
+        if w < wi:
+            li[i][w] = li[i-1][w]
+        else:
+            li[i][w] = max(vi + li[i-1][w-wi], li[i-1][w])
+            
+print(li[n][k])
