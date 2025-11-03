@@ -10,6 +10,10 @@ for (let ch of input) {
   }
 }
 
+/* for (const char of alphabet) {
+  dict[char] = (dict[char] || 0) + 1;
+} */
+
 let maxVal = Math.max(...Object.values(dict));
 let maxKey = Object.keys(dict).filter((key) => dict[key] === maxVal);
 
@@ -17,4 +21,5 @@ if (maxKey.length > 1) {
   console.log("?");
 } else {
   console.log(maxKey.toString());
+
 }
