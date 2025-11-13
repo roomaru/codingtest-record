@@ -4,6 +4,7 @@ This is an auto push repository for Baekjoon Online Judge created with [Baekjoon
 ## 📌 목적
 - 코딩테스트 대비 문제 풀이 기록
 - 풀이 과정 복습
+- 알고리즘 정리
 
 ## 🛠️ 사용 환경
 - 사용 언어: **JavaScript**, **Python**
