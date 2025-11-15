@@ -37,4 +37,7 @@
   
 3. BFS가 끝나면 그림 크기 저장 후 다음 칸 탐색
    - `paints` 배열에 `size` 값 저장
- 
+
+4. 출력
+   - `paints.length`: 전체 그림 개수
+   - `Math.max(...paints)`: 최대 크기 그림
