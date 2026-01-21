@@ -1,12 +1,13 @@
 function solution(s){
-    var stack = [];
+    var stack = 0;
     
-    for (let char of s) {
-        if (char === "(") stack.push(char);
-        else {
-            if (stack.length === 0 || stack.pop() !== "(") return false;
+    for (let i = 0; i < s.length; i++) {
+        if (s[i] === '(') {
+            stack++;
+        } else {
+            if (stack === 0) return false;
+            stack--;
         }
     }
-
-    return stack.length === 0;
+    return stack === 0;
 }
