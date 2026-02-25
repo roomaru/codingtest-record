@@ -1,3 +1,8 @@
+// 풀이 과정
+// 1. n이 1 or 3일 경우에는 나눌 수 없음 -> -1 출력
+// 2. 5원을 최대한 많이
+// 3. 5원 거슬러주고 남은 돈은 짝수여야 함
+
 const fs = require("fs");
 const input = fs.readFileSync("/dev/stdin").toString().trim().split("\n");
 
@@ -18,4 +23,5 @@ else {
   n %= 2;
 
   console.log(cnt);
+
 }
