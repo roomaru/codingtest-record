@@ -4,8 +4,6 @@ function solution(want, number, discount) {
     for (let i = 0; i < discount.length; i++) {
         let cnt = 0;
         
-        if (i+10 > discount.length) break;
-        
         let product = discount.slice(i, i+10);
         
         for (let j = 0; j < want.length; j++) {
