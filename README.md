@@ -7,6 +7,6 @@ This is an auto push repository for Baekjoon Online Judge created with [Baekjoon
 - 알고리즘 정리
 
 ## 🛠️ 사용 환경
-- 사용 언어: **JavaScript**, **Python**
+- 사용 언어: **JavaScript**, **Python**, **SQL**
 - 연동 도구: [BaekjoonHub 크롬 확장](https://github.com/BaekjoonHub/BaekjoonHub)
 - 개발 환경: VS Code
