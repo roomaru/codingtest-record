@@ -1,11 +1,11 @@
 function solution(n) {
-    let a = 0, b = 1;
+    let a = 0, b = 1, f = 0;
 
     for (let i = 2; i <= n; i++) {
-        let f = (a + b) % 1234567;
+        f = (a + b) % 1234567;
         a = b;
         b = f;
     }
 
-    return n === 0 ? 0 : b;
+    return f;
 }
