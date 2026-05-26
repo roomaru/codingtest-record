@@ -17,3 +17,24 @@ function solution(numbers) {
     return answer;
 }
 
+// 틀린 함수: 시간 초과(이중 포문)
+// function solution(numbers) {
+//     var answer = [];
+    
+//     for (let i = 0; i < numbers.length; i++) {
+//         var flag = false;
+        
+//         for (let j = i+1; j < numbers.length; j++) {
+//             if (numbers[i] < numbers[j]) {
+//                 answer.push(numbers[j]);
+//                 flag = true;
+//                 break;
+//             } else {
+//                 flag = false;
+//             }
+//         }
+//         if (!flag) answer.push(-1)
+//     }
+    
+//     return answer;
+// }
